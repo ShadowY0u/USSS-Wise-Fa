@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U.S.S.S - Formation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo" aria-hidden="true">★</div>
+      <div class="brand__name">U.S.S.S</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="divisions.html">Divisions</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link nav__link--active" href="formation.html">Formation</a>
+    </nav>
+  </div>
+
+  <div class="topbar__right">
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input class="search__input" type="search" placeholder="Rechercher..." />
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card page">
+    <h1 class="page__title">Formation</h1>
+    <p class="page__desc">
+      Mets ici le programme de formation : tests, prérequis, modules, validations,
+      et progression des recrues.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
