@@ -1,51 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Procédure</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USS • Procédure</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="topbar">
-  <div class="topbar__left">
-    <div class="brand">
-      <div class="brand__logo">★</div>
-      <div class="brand__name">U.S.S.S</div>
-    </div>
+  <div class="container topbar-inner">
+    <a class="brand" href="procedure.html">
+      <div class="brand-badge">U</div>
+      <div>USS</div>
+    </a>
 
     <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="reglement.html">Règlement</a>
-      <a class="nav__link nav__link--active" href="procedure.html">Procédure</a>
-      <a class="nav__link" href="communications.html">Communications</a>
-      <a class="nav__link" href="plainte.html">Plainte</a>
-      <a class="nav__link" href="vehicules.html">Véhicules</a>
-      <a class="nav__link" href="divisions.html">Divisions</a>
-      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
-      <a class="nav__link" href="supervision.html">Supervision</a>
-      <a class="nav__link" href="formation.html">Formation</a>
+      <a class="active" href="procedure.html">Procédure</a>
+      <a href="divisions.html">Divisions</a>
+      <a href="supervision.html">Supervision</a>
+      <a href="formation.html">Formation</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <div class="card page">
-    <h1 class="page__title">Procédure</h1>
-    <p class="page__desc">
-      Détaillez ici les procédures officielles : arrestations, contrôle d’identité,
-      protection VIP, intervention armée, etc.
+  <section class="hero">
+    <h1>Procédure</h1>
+    <p>
+      Règles d’intervention et de fonctionnement du USS.
+      Utilise ces blocs comme base : tu pourras modifier facilement les textes selon ton serveur / ton organisation.
     </p>
-  </div>
+  </section>
+
+  <section class="grid">
+    <article class="card full">
+      <div class="tag"><span class="tag-dot"></span> Standard opérationnel</div>
+      <h2>Schéma d’intervention (simple)</h2>
+      <ul>
+        <li><b>1. Observation</b> : identifier la situation, sécuriser la zone.</li>
+        <li><b>2. Contact</b> : annonce claire, posture professionnelle, contrôle.</li>
+        <li><b>3. Décision</b> : appliquer la procédure adaptée (contrôle, escorte, neutralisation).</li>
+        <li><b>4. Compte-rendu</b> : rapport écrit + preuves si nécessaire.</li>
+      </ul>
+      <div class="split">
+        <a class="btn primary" href="divisions.html">Voir les divisions →</a>
+        <a class="btn" href="supervision.html">Règles supervision →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Contrôle</div>
+      <h2>Contrôle d’identité</h2>
+      <ul>
+        <li>Motif + annonce de contrôle.</li>
+        <li>Fouille / palpation selon contexte (sécurité).</li>
+        <li>Vérification informations + décision (libération / escorte / retenue).</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Sécurité</div>
+      <h2>Gestion périmètre</h2>
+      <ul>
+        <li>Définir zone : interne / externe / accès.</li>
+        <li>Placer points de contrôle et consignes radio.</li>
+        <li>Autorisation entrée : liste / badge / validation supervisor.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Radio</div>
+      <h2>Codes & communication</h2>
+      <ul>
+        <li>Messages courts, clairs, sans spam.</li>
+        <li>Priorité : sécurité, localisation, besoin renfort.</li>
+        <li>Fin d’action : “situation sous contrôle” + résumé.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Rapport</div>
+      <h2>Compte-rendu obligatoire</h2>
+      <ul>
+        <li>Qui / quoi / où / quand.</li>
+        <li>Mesures prises + justification.</li>
+        <li>Pièces : captures, vidéo, témoins.</li>
+      </ul>
+    </article>
+  </section>
 </main>
 
 <footer class="footer">
-  <p>© <span id="year"></span> U.S.S.S</p>
+  <div class="container">USS • Procédure • Version site</div>
 </footer>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
