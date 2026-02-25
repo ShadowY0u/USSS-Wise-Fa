@@ -1,59 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Formation</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USS • Formation</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="topbar">
-  <div class="topbar__left">
-    <div class="brand">
-      <div class="brand__logo" aria-hidden="true">★</div>
-      <div class="brand__name">U.S.S.S</div>
-    </div>
+  <div class="container topbar-inner">
+    <a class="brand" href="formation.html">
+      <div class="brand-badge">U</div>
+      <div>USS</div>
+    </a>
 
     <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="reglement.html">Règlement</a>
-      <a class="nav__link" href="procedure.html">Procédure</a>
-      <a class="nav__link" href="communications.html">Communications</a>
-      <a class="nav__link" href="plainte.html">Plainte</a>
-      <a class="nav__link" href="vehicules.html">Véhicules</a>
-      <a class="nav__link" href="divisions.html">Divisions</a>
-      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
-      <a class="nav__link" href="supervision.html">Supervision</a>
-      <a class="nav__link nav__link--active" href="formation.html">Formation</a>
+      <a href="procedure.html">Procédure</a>
+      <a href="divisions.html">Divisions</a>
+      <a href="supervision.html">Supervision</a>
+      <a class="active" href="formation.html">Formation</a>
     </nav>
-  </div>
-
-  <div class="topbar__right">
-    <div class="search">
-      <span class="search__icon" aria-hidden="true">⌕</span>
-      <input class="search__input" type="search" placeholder="Rechercher..." />
-      <span class="search__hint" aria-hidden="true">Ctrl K</span>
-    </div>
   </div>
 </header>
 
 <main class="container">
-  <div class="card page">
-    <h1 class="page__title">Formation</h1>
-    <p class="page__desc">
-      Mets ici le programme de formation : tests, prérequis, modules, validations,
-      et progression des recrues.
-    </p>
-  </div>
+  <section class="hero">
+    <h1>Formation</h1>
+    <p>Parcours clair : entrée → entraînement → validation → affectation.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card full">
+      <div class="tag"><span class="tag-dot"></span> Parcours</div>
+      <h2>Étapes de formation</h2>
+      <ul>
+        <li><b>1) Accueil</b> : règles, radio, tenue, comportement.</li>
+        <li><b>2) Techniques</b> : contrôle, sécurité périmètre, escorte.</li>
+        <li><b>3) Scénarios</b> : simulations, gestion stress, coordination.</li>
+        <li><b>4) Évaluation</b> : test final + validation superviseur.</li>
+        <li><b>5) Affectation</b> : division + mentor (suivi 7 jours).</li>
+      </ul>
+      <div class="split">
+        <a class="btn primary" href="procedure.html">Voir Procédure →</a>
+        <a class="btn" href="supervision.html">Voir Supervision →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Recrue</div>
+      <h2>Objectifs minimum</h2>
+      <ul>
+        <li>Connaître les bases radio</li>
+        <li>Contrôle + fouille propre</li>
+        <li>Tenue / discipline</li>
+        <li>Rapport simple</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Test</div>
+      <h2>Validation</h2>
+      <ul>
+        <li>Scénario contrôle + périmètre</li>
+        <li>Scénario escorte VIP</li>
+        <li>Débrief + rapport</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Progression</div>
+      <h2>Après formation</h2>
+      <ul>
+        <li>Période d’essai</li>
+        <li>Suivi par un senior</li>
+        <li>Accès progressif aux missions</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Règle</div>
+      <h2>Rappel important</h2>
+      <p>Le comportement (discipline, calme, communication) compte autant que les actions terrain.</p>
+    </article>
+  </section>
 </main>
 
 <footer class="footer">
-  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
+  <div class="container">USS • Formation • Version site</div>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
