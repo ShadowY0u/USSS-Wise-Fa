@@ -3,88 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Portail</title>
-
+  <title>U.S.S.S - Accueil</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- TOP BAR -->
-  <header class="topbar">
-    <div class="topbar__left">
-      <div class="brand">
-        <div class="brand__logo" aria-hidden="true">★</div>
-        <div class="brand__name">U.S.S.S</div>
-      </div>
-
-      <nav class="nav">
-        <a class="nav__link nav__link--active" href="#">Accueil</a>
-        <a class="nav__link" href="#">Règlement</a>
-        <a class="nav__link" href="#">Procédure</a>
-        <a class="nav__link" href="#">Communications</a>
-        <a class="nav__link" href="#">Plainte</a>
-        <a class="nav__link" href="#">Véhicules</a>
-        <a class="nav__link" href="#">Divisions</a>
-        <a class="nav__link" href="#">Hiérarchie</a>
-        <a class="nav__link" href="#">Supervision</a>
-        <a class="nav__link" href="#">Formation</a>
-      </nav>
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo" aria-hidden="true">★</div>
+      <div class="brand__name">U.S.S.S</div>
     </div>
 
-    <div class="topbar__right">
-      <div class="search">
-        <span class="search__icon" aria-hidden="true">⌕</span>
-        <input class="search__input" type="search" placeholder="Rechercher..." />
-        <span class="search__hint" aria-hidden="true">Ctrl K</span>
-      </div>
+    <nav class="nav">
+      <a class="nav__link nav__link--active" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="divisions.html">Divisions</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link" href="formation.html">Formation</a>
+    </nav>
+  </div>
+
+  <div class="topbar__right">
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input class="search__input" type="search" placeholder="Rechercher..." />
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- MAIN -->
-  <main class="container">
-    <section class="hero">
-      <h1 class="hero__title">United States Secret Service</h1>
-      <p class="hero__subtitle">Honor &amp; Protect</p>
-    </section>
+<main class="container">
+  <section class="hero">
+    <h1 class="hero__title">United States Secret Service</h1>
+    <p class="hero__subtitle">Honor &amp; Protect</p>
+  </section>
 
-    <hr class="divider" />
+  <hr class="divider" />
 
-    <section class="grid">
-      <div class="card media">
-        <!-- Remplace "banner.jpg" par ton image -->
-        <img class="media__img" src="banner.jpg" alt="Photo USSS" />
-      </div>
+  <section class="grid">
+    <div class="card">
+      <img class="media__img" src="banner.jpg" alt="Photo USSS" />
+    </div>
 
-      <div class="card text">
-        <h2 class="text__title">Rejoignez une équipe soudée</h2>
-        <p class="text__desc">
-          Rejoignez une unité où discipline, coordination et entraide guident chaque mission.
-          Ici, chacun contribue à un environnement dynamique, humain et exigeant.
-        </p>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <section class="cta">
-      <h2 class="cta__title">« Rejoignez dès maintenant nos agents »</h2>
-      <p class="cta__desc">
-        Intégrez une communauté engagée, unie par le sens du devoir et la passion de servir.
-        Ensemble, nous construisons une unité solide, professionnelle et tournée vers l’avenir.
+    <div class="card text">
+      <h2 class="text__title">Rejoignez une équipe soudée</h2>
+      <p class="text__desc">
+        Discipline, coordination et entraide guident chaque mission.
+        Un portail clair, structuré et rapide d’accès pour l’ensemble des unités.
       </p>
-      <div class="cta__actions">
-        <a class="btn btn--primary" href="#">Recrutement</a>
-        <a class="btn btn--ghost" href="#">En savoir plus</a>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
-  </footer>
+  <hr class="divider" />
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <section class="cta">
+    <h2 class="cta__title">« Rejoignez dès maintenant nos agents »</h2>
+    <p class="cta__desc">
+      Intégrez une communauté engagée, unie par le sens du devoir et la passion de servir.
+    </p>
+    <a class="btn btn--primary" href="formation.html">Accéder à la formation</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
