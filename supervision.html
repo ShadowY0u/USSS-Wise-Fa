@@ -1,59 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Supervision</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USS • Supervision</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="topbar">
-  <div class="topbar__left">
-    <div class="brand">
-      <div class="brand__logo" aria-hidden="true">★</div>
-      <div class="brand__name">U.S.S.S</div>
-    </div>
+  <div class="container topbar-inner">
+    <a class="brand" href="supervision.html">
+      <div class="brand-badge">U</div>
+      <div>USS</div>
+    </a>
 
     <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="reglement.html">Règlement</a>
-      <a class="nav__link" href="procedure.html">Procédure</a>
-      <a class="nav__link" href="communications.html">Communications</a>
-      <a class="nav__link" href="plainte.html">Plainte</a>
-      <a class="nav__link" href="vehicules.html">Véhicules</a>
-      <a class="nav__link" href="divisions.html">Divisions</a>
-      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
-      <a class="nav__link nav__link--active" href="supervision.html">Supervision</a>
-      <a class="nav__link" href="formation.html">Formation</a>
+      <a href="procedure.html">Procédure</a>
+      <a href="divisions.html">Divisions</a>
+      <a class="active" href="supervision.html">Supervision</a>
+      <a href="formation.html">Formation</a>
     </nav>
-  </div>
-
-  <div class="topbar__right">
-    <div class="search">
-      <span class="search__icon" aria-hidden="true">⌕</span>
-      <input class="search__input" type="search" placeholder="Rechercher..." />
-      <span class="search__hint" aria-hidden="true">Ctrl K</span>
-    </div>
   </div>
 </header>
 
 <main class="container">
-  <div class="card page">
-    <h1 class="page__title">Supervision</h1>
-    <p class="page__desc">
-      Ajoute ici les règles de supervision : inspections, rapports, suivi des agents,
-      évaluations et sanctions internes.
-    </p>
-  </div>
+  <section class="hero">
+    <h1>Supervision</h1>
+    <p>Cadre de commandement : qui supervise quoi, et comment on gère une mission.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card full">
+      <div class="tag"><span class="tag-dot"></span> Chaîne de commandement</div>
+      <h2>Règles générales</h2>
+      <ul>
+        <li>Un seul responsable opérationnel par intervention (évite le chaos).</li>
+        <li>Les ordres se donnent par priorité : sécurité → mission → confort.</li>
+        <li>Tout ordre illégal / dangereux → signalement immédiat + rapport.</li>
+      </ul>
+      <div class="split">
+        <a class="btn primary" href="procedure.html">Procédures →</a>
+        <a class="btn" href="divisions.html">Divisions →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Briefing</div>
+      <h2>Avant mission</h2>
+      <ul>
+        <li>Objectif + zones + menaces.</li>
+        <li>Rôles attribués (points, escorte, appui).</li>
+        <li>Canal radio + mots clés + extraction.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Terrain</div>
+      <h2>Pendant mission</h2>
+      <ul>
+        <li>Superviseur garde la vue d’ensemble.</li>
+        <li>Unité terrain exécute et remonte infos.</li>
+        <li>Renforts déclenchés uniquement par besoin clair.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Débrief</div>
+      <h2>Après mission</h2>
+      <ul>
+        <li>Résumé : ce qui s’est passé / résultat / incidents.</li>
+        <li>Rapports : action, saisies, blessures, dégâts.</li>
+        <li>Améliorations : ce qu’on change la prochaine fois.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="tag"><span class="tag-dot"></span> Discipline</div>
+      <h2>Gestion des écarts</h2>
+      <ul>
+        <li>Avertissement oral (mineur)</li>
+        <li>Rapport + sanction (répétition / grave)</li>
+        <li>Suspension / rétrogradation (grave)</li>
+      </ul>
+    </article>
+  </section>
 </main>
 
 <footer class="footer">
-  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
+  <div class="container">USS • Supervision • Version site</div>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
