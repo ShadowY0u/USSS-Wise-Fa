@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U.S.S.S - Procédure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo">★</div>
+      <div class="brand__name">U.S.S.S</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link nav__link--active" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="divisions.html">Divisions</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link" href="formation.html">Formation</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card page">
+    <h1 class="page__title">Procédure</h1>
+    <p class="page__desc">
+      Détaillez ici les procédures officielles : arrestations, contrôle d’identité,
+      protection VIP, intervention armée, etc.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> U.S.S.S</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
