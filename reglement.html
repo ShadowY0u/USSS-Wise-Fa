@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,12 +6,13 @@
   <title>U.S.S.S - Règlement</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body class="page-reglement">
 
 <header class="topbar">
   <div class="topbar__left">
     <div class="brand">
-      <div class="brand__logo" aria-hidden="true">★</div>
+      <div class="brand__logo">★</div>
       <div class="brand__name">U.S.S.S</div>
     </div>
 
@@ -29,24 +29,76 @@
       <a class="nav__link" href="formation.html">Formation</a>
     </nav>
   </div>
-
-  <div class="topbar__right">
-    <div class="search">
-      <span class="search__icon" aria-hidden="true">⌕</span>
-      <input class="search__input" type="search" placeholder="Rechercher..." />
-      <span class="search__hint" aria-hidden="true">Ctrl K</span>
-    </div>
-  </div>
 </header>
 
 <main class="container">
-  <div class="card page">
-    <h1 class="page__title">Règlement</h1>
-    <p class="page__desc">
-      Ajoute ici ton règlement (tenue, comportement, radio, hiérarchie, sanctions, etc.).
-      Tu peux structurer en titres et listes.
-    </p>
-  </div>
+
+  <section class="hero">
+    <h1 class="hero__title">Règlement Général</h1>
+    <p class="hero__subtitle">Discipline — professionnalisme — exemplarité</p>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="grid grid--reglement">
+
+    <!-- Comportement -->
+    <article class="card card--padded">
+      <h2>Comportement</h2>
+      <ul>
+        <li>Être professionnel en toute circonstance.</li>
+        <li>Garder son calme et agir avec maîtrise.</li>
+        <li>Interdiction d’abus de pouvoir.</li>
+        <li>Aucune provocation ou comportement immature.</li>
+      </ul>
+    </article>
+
+    <!-- Respect -->
+    <article class="card card--padded">
+      <h2>Respect</h2>
+      <ul>
+        <li>Respect des supérieurs et collègues.</li>
+        <li>Respect des civils et autres organisations.</li>
+        <li>Aucun propos discriminatoire ou insultant.</li>
+        <li>Communication polie et structurée.</li>
+      </ul>
+    </article>
+
+    <!-- Hiérarchie -->
+    <article class="card card--padded">
+      <h2>Hiérarchie</h2>
+      <ul>
+        <li>Obligation d’obéir aux ordres supérieurs.</li>
+        <li>Respect strict de la chaîne de commandement.</li>
+        <li>Remontée d’informations via les supérieurs directs.</li>
+        <li>Contestations uniquement via procédure officielle.</li>
+      </ul>
+    </article>
+
+    <!-- Uniforme -->
+    <article class="card card--padded">
+      <h2>Uniforme</h2>
+      <ul>
+        <li>Tenue réglementaire obligatoire en service.</li>
+        <li>Équipement conforme à la division.</li>
+        <li>Aucune modification non autorisée.</li>
+        <li>Apparence soignée et professionnelle.</li>
+      </ul>
+    </article>
+
+    <!-- Conduite -->
+    <article class="card card--padded card--full">
+      <h2>Conduite</h2>
+      <ul>
+        <li>Conduite adaptée au contexte (priorité sécurité).</li>
+        <li>Respect des règles internes d’utilisation des véhicules.</li>
+        <li>Interdiction d’utilisation abusive des gyrophares.</li>
+        <li>Responsabilité totale en cas d’accident.</li>
+      </ul>
+    </article>
+
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -56,5 +108,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
