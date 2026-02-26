@@ -6,35 +6,50 @@
   <title>U.S.S.S - Procédure</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body class="page-procedure">
 <header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="procedure.html">
-      <div class="brand-badge">U</div>
-      <div>USS</div>
-    </a>
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo" aria-hidden="true">★</div>
+      <div class="brand__name">U.S.S.S</div>
+    </div>
 
     <nav class="nav">
-      <a class="active" href="procedure.html">Procédure</a>
-      <a href="divisions.html">Divisions</a>
-      <a href="supervision.html">Supervision</a>
-      <a href="formation.html">Formation</a>
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link nav__link--active" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="divisions.html">Divisions</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link" href="formation.html">Formation</a>
     </nav>
+  </div>
+
+  <div class="topbar__right">
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input class="search__input" type="search" placeholder="Rechercher..." />
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
+    </div>
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
-    <h1>Procédure</h1>
-    <p>
-      Règles d’intervention et de fonctionnement du USS.
-      Utilise ces blocs comme base : tu pourras modifier facilement les textes selon ton serveur / ton organisation.
+    <h1 class="hero__title">Procédure</h1>
+    <p class="hero__subtitle">
+      Règles d’intervention et de fonctionnement du U.S.S.S.
     </p>
   </section>
 
-  <section class="grid">
-    <article class="card full">
+  <hr class="divider" />
+
+  <section class="grid grid--procedure">
+    <article class="card card--full">
       <div class="tag"><span class="tag-dot"></span> Standard opérationnel</div>
       <h2>Schéma d’intervention (simple)</h2>
       <ul>
@@ -43,13 +58,14 @@
         <li><b>3. Décision</b> : appliquer la procédure adaptée (contrôle, escorte, neutralisation).</li>
         <li><b>4. Compte-rendu</b> : rapport écrit + preuves si nécessaire.</li>
       </ul>
+
       <div class="split">
-        <a class="btn primary" href="divisions.html">Voir les divisions →</a>
-        <a class="btn" href="supervision.html">Règles supervision →</a>
+        <a class="btn btn--primary" href="divisions.html">Voir les divisions →</a>
+        <a class="btn btn--primary" href="supervision.html">Règles supervision →</a>
       </div>
     </article>
 
-    <article class="card">
+    <article class="card card--padded">
       <div class="tag"><span class="tag-dot"></span> Contrôle</div>
       <h2>Contrôle d’identité</h2>
       <ul>
@@ -59,7 +75,7 @@
       </ul>
     </article>
 
-    <article class="card">
+    <article class="card card--padded">
       <div class="tag"><span class="tag-dot"></span> Sécurité</div>
       <h2>Gestion périmètre</h2>
       <ul>
@@ -69,7 +85,7 @@
       </ul>
     </article>
 
-    <article class="card">
+    <article class="card card--padded">
       <div class="tag"><span class="tag-dot"></span> Radio</div>
       <h2>Codes & communication</h2>
       <ul>
@@ -79,7 +95,7 @@
       </ul>
     </article>
 
-    <article class="card">
+    <article class="card card--padded">
       <div class="tag"><span class="tag-dot"></span> Rapport</div>
       <h2>Compte-rendu obligatoire</h2>
       <ul>
@@ -92,8 +108,11 @@
 </main>
 
 <footer class="footer">
-  <div class="container">USS • Procédure • Version site</div>
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
 </footer>
 
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
