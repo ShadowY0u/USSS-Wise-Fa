@@ -241,7 +241,6 @@ body {
   grid-column: 1 / -1;
 }
 
-/* responsive */
 @media (max-width: 980px){
   .page-reglement .grid--reglement{
     grid-template-columns: 1fr;
@@ -249,19 +248,4 @@ body {
   .page-reglement .card--full{
     grid-column:auto;
   }
-}
-
-.page-reglement h3{
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: rgba(232,238,247,0.85);
-}
-
-.page-reglement ul{
-  line-height: 1.7;
-}
-
-.page-reglement li{
-  margin-bottom: 8px;
 }
