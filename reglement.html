@@ -18,7 +18,22 @@
 
     <nav class="nav">
       <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link nav__link--active" href="reglement.html">Règlement</a>
+
+      <!-- DROPDOWN REGLEMENT -->
+      <div class="dropdown">
+        <a class="nav__link nav__link--active" href="reglement.html">
+          Règlement ▾
+        </a>
+
+        <div class="dropdown-menu">
+          <a href="#comportement">Comportement</a>
+          <a href="#respect">Respect</a>
+          <a href="#hierarchie">Hiérarchie</a>
+          <a href="#uniforme">Uniforme</a>
+          <a href="#conduite">Conduite</a>
+        </div>
+      </div>
+
       <a class="nav__link" href="procedure.html">Procédure</a>
       <a class="nav__link" href="communications.html">Communications</a>
       <a class="nav__link" href="plainte.html">Plainte</a>
@@ -43,79 +58,68 @@
   <section class="grid grid--reglement">
 
     <!-- Comportement -->
-    <article class="card card--full card--padded">
-  <h2>Comportement</h2>
+    <article id="comportement" class="card card--full card--padded">
+      <h2>Comportement</h2>
 
-  <h3>Règlement en service</h3>
-  <ul>
-    <li><b>0.01</b> • Être agent du U.S.S.S implique de grandes responsabilités. Cela exige une attitude exemplaire envers les citoyens ainsi qu’envers les membres de l’unité.</li>
+      <h3>Règlement en service</h3>
+      <ul>
+        <li><b>0.01</b> • Être agent du U.S.S.S implique de grandes responsabilités...</li>
+        <li><b>0.02</b> • Chaque agent représente l’image du U.S.S.S...</li>
+        <li><b>0.03</b> • Tout comportement inapproprié entraînera un avertissement...</li>
+        <li><b>0.04</b> • Tout manque de discipline entraînera une sanction...</li>
+        <li><b>0.05</b> • Tout abus de pouvoir entraînera une mise à pied...</li>
+        <li><b>0.06</b> • Absence non justifiée : avertissement puis licenciement.</li>
+      </ul>
 
-    <li><b>0.02</b> • Chaque agent, en uniforme ou non, représente l’image du U.S.S.S. Celle-ci doit rester irréprochable. En service, la tolérance zéro s’applique concernant le comportement envers les citoyens. Un agent doit respecter sa tenue, son insigne et rester prêt à tout moment à protéger et servir.</li>
+      <hr class="divider">
 
-    <li><b>0.03</b> • Tout comportement inapproprié (colère excessive, plaintes répétées, attitude déplacée, etc.) entraînera un avertissement immédiat. En cas de récidive, une rétrogradation pourra être appliquée après examen hiérarchique.</li>
-
-    <li><b>0.04</b> • Tout manque de discipline (langage inapproprié, gestes déplacés) ou de respect envers citoyens ou collègues entraînera une sanction adaptée, pouvant aller d’un avertissement à une rétrogradation.</li>
-
-    <li><b>0.05</b> • Tout abus de pouvoir (fouille abusive, arrestation non justifiée, usage excessif d’autorité) entraînera un avertissement et une mise à pied de 24 heures minimum, décision prise par la hiérarchie ou l’État-Major.</li>
-
-    <li><b>0.06</b> • Tout agent ne patrouillant pas durant 3 jours consécutifs sans justification recevra un avertissement. Au-delà de 5 jours sans justification valable, un licenciement pourra être prononcé.</li>
-  </ul>
-
-  <hr class="divider">
-
-  <h3>Règlement hors service</h3>
-  <ul>
-    <li><b>0.07</b> • Hors service, aucun signe distinctif du U.S.S.S ne doit apparaître sur vos tenues civiles. Il est strictement interdit de porter une arme de service en dehors des heures de service.</li>
-
-    <li><b>0.08</b> • Vous devez adopter une conduite exemplaire en toute circonstance. Tout non-respect grave du code de la route pourra entraîner une interdiction de conduire temporaire ou définitive.</li>
-
-    <li><b>0.09</b> • Hors service, il est interdit de rester sur les fréquences radio internes, sauf autorisation spécifique (État-Major). Tout manquement entraînera un avertissement, suivi d’une sanction aggravée en cas de récidive.</li>
-
-    <li><b>0.10</b> • Il est strictement interdit de divulguer des informations personnelles ou professionnelles à toute personne extérieure au service. Toute violation entraînera un licenciement immédiat sans solde.</li>
-  </ul>
-</article>
+      <h3>Règlement hors service</h3>
+      <ul>
+        <li><b>0.07</b> • Aucun signe distinctif hors service.</li>
+        <li><b>0.08</b> • Conduite exemplaire exigée.</li>
+        <li><b>0.09</b> • Interdiction radio hors service (sauf État-Major).</li>
+        <li><b>0.10</b> • Divulgation d’informations = licenciement immédiat.</li>
+      </ul>
+    </article>
 
     <!-- Respect -->
-    <article class="card card--padded">
+    <article id="respect" class="card card--padded">
       <h2>Respect</h2>
       <ul>
         <li>Respect des supérieurs et collègues.</li>
-        <li>Respect des civils et autres organisations.</li>
-        <li>Aucun propos discriminatoire ou insultant.</li>
-        <li>Communication polie et structurée.</li>
+        <li>Respect des civils.</li>
+        <li>Aucun propos discriminatoire.</li>
+        <li>Communication professionnelle.</li>
       </ul>
     </article>
 
     <!-- Hiérarchie -->
-    <article class="card card--padded">
+    <article id="hierarchie" class="card card--padded">
       <h2>Hiérarchie</h2>
       <ul>
-        <li>Obligation d’obéir aux ordres supérieurs.</li>
-        <li>Respect strict de la chaîne de commandement.</li>
-        <li>Remontée d’informations via les supérieurs directs.</li>
-        <li>Contestations uniquement via procédure officielle.</li>
+        <li>Obligation d’obéir aux ordres.</li>
+        <li>Respect de la chaîne de commandement.</li>
+        <li>Remontée d’informations hiérarchique.</li>
       </ul>
     </article>
 
     <!-- Uniforme -->
-    <article class="card card--padded">
+    <article id="uniforme" class="card card--padded">
       <h2>Uniforme</h2>
       <ul>
-        <li>Tenue réglementaire obligatoire en service.</li>
-        <li>Équipement conforme à la division.</li>
+        <li>Tenue réglementaire obligatoire.</li>
+        <li>Équipement conforme.</li>
         <li>Aucune modification non autorisée.</li>
-        <li>Apparence soignée et professionnelle.</li>
       </ul>
     </article>
 
     <!-- Conduite -->
-    <article class="card card--padded card--full">
+    <article id="conduite" class="card card--full card--padded">
       <h2>Conduite</h2>
       <ul>
-        <li>Conduite adaptée au contexte (priorité sécurité).</li>
-        <li>Respect des règles internes d’utilisation des véhicules.</li>
-        <li>Interdiction d’utilisation abusive des gyrophares.</li>
-        <li>Responsabilité totale en cas d’accident.</li>
+        <li>Conduite adaptée au contexte.</li>
+        <li>Respect des règles internes.</li>
+        <li>Responsabilité en cas d’accident.</li>
       </ul>
     </article>
 
