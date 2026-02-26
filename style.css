@@ -267,3 +267,67 @@ body {
 html{
   scroll-behavior:smooth;
 }
+
+/* ===== Hiérarchie (premium) ===== */
+
+.rank-section{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.rank-section__head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 10px;
+}
+
+.rank-section__head h2{
+  margin:0;
+  font-size: 18px;
+  letter-spacing: .2px;
+}
+
+.rank-badge{
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(79,140,255,.35);
+  background: rgba(79,140,255,.10);
+  color: rgba(232,238,252,.85);
+}
+
+.rank-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.rank-item{
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  color: rgba(232,238,252,.90);
+  font-weight: 700;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.rank-item:hover{
+  transform: translateY(-1px);
+  border-color: rgba(79,140,255,.55);
+  background: rgba(79,140,255,.10);
+}
+
+.rank-item:active{
+  transform: translateY(0px);
+}
