@@ -1,98 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>USS • Divisions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U.S.S.S - Divisions</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body class="page-divisions">
 <header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="divisions.html">
-      <div class="brand-badge">U</div>
-      <div>USS</div>
-    </a>
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo" aria-hidden="true">★</div>
+      <div class="brand__name">U.S.S.S</div>
+    </div>
 
     <nav class="nav">
-      <a href="procedure.html">Procédure</a>
-      <a class="active" href="divisions.html">Divisions</a>
-      <a href="supervision.html">Supervision</a>
-      <a href="formation.html">Formation</a>
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link nav__link--active" href="divisions.html">Divisions</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link" href="formation.html">Formation</a>
     </nav>
+  </div>
+
+  <div class="topbar__right">
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input class="search__input" type="search" placeholder="Rechercher..." />
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
+    </div>
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
-    <h1>Divisions</h1>
-    <p>Organisation interne du USS. Chaque division a un rôle clair et une chaîne de commandement.</p>
+    <h1 class="hero__title">Divisions</h1>
+    <p class="hero__subtitle">Organisation — rôles — responsabilités</p>
   </section>
 
-  <section class="grid">
-    <article class="card">
-      <div class="tag"><span class="tag-dot"></span> Opérationnel</div>
-      <h2>Division Uniforme</h2>
-      <p>Sécurité fixe, périmètre, contrôle accès, présence dissuasive, patrouille.</p>
+  <hr class="divider" />
+
+  <section class="grid grid--divisions">
+    <article class="card card--full card--padded">
+      <div class="tag"><span class="tag-dot"></span> Vue d’ensemble</div>
+      <h2>Structure générale</h2>
+      <p class="muted">
+        Cette page présente les divisions et leurs missions. Tu peux modifier les noms,
+        ajouter des chefs de division, et lister les accès / formations nécessaires.
+      </p>
       <div class="split">
-        <a class="btn" href="procedure.html">Procédures</a>
-        <a class="btn" href="supervision.html">Supervision</a>
+        <a class="btn btn--primary" href="hierarchie.html">Voir la hiérarchie →</a>
+        <a class="btn btn--primary" href="formation.html">Programme formation →</a>
       </div>
     </article>
 
-    <article class="card">
-      <div class="tag"><span class="tag-dot"></span> VIP</div>
-      <h2>Protection Rapprochée</h2>
-      <p>Escortes, sécurisation VIP, planification itinéraires, coordination terrain.</p>
+    <article class="card card--padded">
+      <div class="tag"><span class="tag-dot"></span> Protection</div>
+      <h2>Protection rapprochée</h2>
       <ul>
-        <li>Chef d’escorte</li>
-        <li>Équipe rapprochée</li>
-        <li>Reconnaissance</li>
+        <li>Escortes VIP & sécurisation d’événements.</li>
+        <li>Gestion périmètre + accès + contrôles.</li>
+        <li>Coordination radio et dispositif terrain.</li>
       </ul>
     </article>
 
-    <article class="card">
-      <div class="tag"><span class="tag-dot"></span> Soutien</div>
-      <h2>Logistique & Matériel</h2>
-      <p>Gestion véhicules, équipements, inventaires, maintenance et autorisations.</p>
+    <article class="card card--padded">
+      <div class="tag"><span class="tag-dot"></span> Investigations</div>
+      <h2>Enquêtes & Renseignement</h2>
       <ul>
-        <li>Attribution équipement</li>
-        <li>Contrôle état matériel</li>
-        <li>Rapports incidents</li>
+        <li>Collecte d’informations & filatures.</li>
+        <li>Analyse des menaces & prévention.</li>
+        <li>Rapports et coordination inter-unités.</li>
       </ul>
     </article>
 
-    <article class="card">
-      <div class="tag"><span class="tag-dot"></span> Organisation</div>
-      <h2>Administration</h2>
-      <p>Dossiers internes, sanctions, promotions, documents officiels, RH.</p>
+    <article class="card card--padded">
+      <div class="tag"><span class="tag-dot"></span> Support</div>
+      <h2>Support & Logistique</h2>
       <ul>
-        <li>Gestion personnel</li>
-        <li>Archives & rapports</li>
-        <li>Suivi des plaintes</li>
+        <li>Gestion équipements, véhicules, armurerie.</li>
+        <li>Préparation des opérations (matériel).</li>
+        <li>Maintenance et inventaires.</li>
       </ul>
     </article>
 
-    <article class="card full">
-      <div class="tag"><span class="tag-dot"></span> Important</div>
-      <h2>Règle de coopération</h2>
+    <article class="card card--padded">
+      <div class="tag"><span class="tag-dot"></span> Commandement</div>
+      <h2>Supervision & Command</h2>
       <ul>
-        <li>Les divisions coopèrent sous autorité d’un superviseur désigné.</li>
-        <li>En situation critique : priorité à la sécurité et aux ordres radio.</li>
-        <li>Tout conflit interne → remontée hiérarchique (voir Supervision).</li>
+        <li>Validation des opérations sensibles.</li>
+        <li>Contrôle qualité, audits et discipline.</li>
+        <li>Suivi des effectifs & évaluations.</li>
       </ul>
-      <div class="split">
-        <a class="btn primary" href="supervision.html">Voir Supervision →</a>
-        <a class="btn" href="formation.html">Voir Formation →</a>
-      </div>
     </article>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container">USS • Divisions • Version site</div>
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
 </footer>
 
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
