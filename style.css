@@ -514,3 +514,185 @@ html{
   .comms-card{padding: 14px}
   .comms-title{font-size: 18px}
 }
+
+/* =======================================
+   DISPATCH — TABLEAUX HEBDO (dispatch-*)
+   ======================================= */
+
+.dispatch-week{
+  display:flex;
+  align-items:stretch;
+  justify-content:space-between;
+  gap:14px;
+  padding:16px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 12px 34px rgba(0,0,0,.38);
+}
+
+.dispatch-week__label{
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color: rgba(168,179,207,.95);
+}
+
+.dispatch-week__range{
+  margin-top:6px;
+  font-size:18px;
+  font-weight:900;
+}
+
+.dispatch-week__meta{
+  margin-top:6px;
+  color: rgba(168,179,207,.95);
+  font-size:14px;
+  line-height:1.5;
+}
+
+.dispatch-week__right{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  justify-content:flex-end;
+}
+
+.dispatch-kpi{
+  min-width:120px;
+  padding:12px 12px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.18);
+  text-align:center;
+}
+
+.dispatch-kpi__value{
+  font-size:22px;
+  font-weight:950;
+}
+
+.dispatch-kpi__label{
+  margin-top:2px;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color: rgba(168,179,207,.95);
+}
+
+/* Cards */
+.dispatch-card{
+  margin-top: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 12px 34px rgba(0,0,0,.38);
+}
+
+.dispatch-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 10px;
+}
+
+.dispatch-title{
+  margin:0;
+  font-size: 18px;
+  font-weight: 950;
+  letter-spacing: .2px;
+}
+
+.dispatch-badge{
+  font-size: 12px;
+  font-weight: 950;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(79,140,255,.35);
+  background: rgba(79,140,255,.10);
+  color: rgba(232,238,252,.90);
+}
+
+.dispatch-badge--ok{
+  border-color: rgba(70, 200, 140, .35);
+  background: rgba(70, 200, 140, .10);
+}
+
+.dispatch-badge--warn{
+  border-color: rgba(255, 190, 80, .35);
+  background: rgba(255, 190, 80, .10);
+}
+
+/* Table wrap */
+.dispatch-table-wrap{
+  overflow-x:auto;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.22);
+}
+
+/* Table */
+.dispatch-table{
+  width:100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 860px;
+}
+
+.dispatch-table thead th{
+  text-align:left;
+  padding: 13px 14px;
+  font-size: 13px;
+  font-weight: 950;
+  color: rgba(232,238,252,.92);
+  background: rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+
+.dispatch-table thead th:first-child{border-top-left-radius:16px;}
+.dispatch-table thead th:last-child{border-top-right-radius:16px;}
+
+.dispatch-table tbody td{
+  padding: 12px 14px;
+  font-size: 14px;
+  color: rgba(232,238,252,.86);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  vertical-align: top;
+}
+
+/* Zebra */
+.dispatch-table tbody tr:nth-child(odd) td{ background: rgba(255,255,255,.02); }
+.dispatch-table tbody tr:nth-child(even) td{ background: rgba(255,255,255,.035); }
+
+.dispatch-table tbody tr:hover td{
+  background: rgba(79,140,255,.12);
+}
+
+/* Notes */
+.dispatch-notes{
+  padding: 12px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.18);
+}
+
+.dispatch-notes__list{
+  margin:0;
+  padding-left:18px;
+  color: rgba(168,179,207,.95);
+  line-height:1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .dispatch-week{flex-direction:column}
+  .dispatch-week__right{justify-content:flex-start}
+}
