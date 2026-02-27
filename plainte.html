@@ -34,21 +34,75 @@
 </header>
 
 <main class="container">
-  <div class="card page">
-    <h1 class="page__title">Plainte</h1>
-    <p class="page__desc">
-      Section destinée aux signalements internes ou externes.
-      Vous pouvez ajouter un formulaire HTML ici plus tard.
+
+  <section class="hero">
+    <h1 class="hero__title">Procédure de prise de plainte</h1>
+    <p class="hero__subtitle">Neutralité • Rigueur • Respect du protocole</p>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- OBJECTIF -->
+  <section class="card">
+    <h2 class="text__title">🎯 Objectif</h2>
+    <p class="text__desc">
+      La prise de plainte doit être réalisée avec professionnalisme, impartialité et précision.
+      Chaque déclaration doit être recueillie sans jugement et dans le respect des procédures internes.
     </p>
-  </div>
+  </section>
+
+  <!-- ÉTAPES -->
+  <section class="card">
+    <h2 class="text__title">📋 Étapes obligatoires</h2>
+
+    <ul class="procedure-list">
+      <li><strong>1. Accueil :</strong> Saluer la personne, se présenter et instaurer un climat calme.</li>
+      <li><strong>2. Vérification d'identité :</strong> Noter nom, prénom, matricule si applicable.</li>
+      <li><strong>3. Récit libre :</strong> Laisser la personne expliquer les faits sans interruption.</li>
+      <li><strong>4. Questions précises :</strong> Clarifier date, lieu, témoins, éléments matériels.</li>
+      <li><strong>5. Reformulation :</strong> Relire ou résumer pour confirmer l’exactitude.</li>
+      <li><strong>6. Rédaction :</strong> Rédiger un rapport structuré, factuel et sans opinion.</li>
+      <li><strong>7. Transmission :</strong> Envoyer au superviseur compétent pour traitement.</li>
+    </ul>
+  </section>
+
+  <!-- RÈGLES IMPORTANTES -->
+  <section class="card">
+    <h2 class="text__title">⚖️ Règles essentielles</h2>
+
+    <ul class="procedure-list">
+      <li>Ne jamais prendre parti.</li>
+      <li>Ne jamais minimiser les faits.</li>
+      <li>Ne pas promettre de sanction immédiate.</li>
+      <li>Rester neutre et professionnel.</li>
+      <li>Toujours documenter les preuves mentionnées.</li>
+    </ul>
+  </section>
+
+  <!-- STRUCTURE RAPPORT -->
+  <section class="card">
+    <h2 class="text__title">📝 Structure du rapport</h2>
+
+    <div class="report-structure">
+      <p><strong>Date :</strong> </p>
+      <p><strong>Agent rédacteur :</strong> </p>
+      <p><strong>Personne plaignante :</strong> </p>
+      <p><strong>Agent concerné :</strong> </p>
+      <p><strong>Description des faits :</strong> </p>
+      <p><strong>Preuves / témoins :</strong> </p>
+      <p><strong>Conclusion :</strong> Transmission à la supervision.</p>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer">
-  <p>© <span id="year"></span> U.S.S.S</p>
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
