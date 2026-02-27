@@ -703,3 +703,35 @@ html{
   box-shadow: 0 20px 50px rgba(0,0,0,.5);
 }
 
+/* TABLE FORMATION */
+.table-wrap{
+  overflow-x: auto;
+}
+
+.formation-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.formation-table th{
+  text-align: left;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: 900;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+}
+
+.formation-table td{
+  padding: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 14px;
+  color: rgba(232,238,247,0.85);
+}
+
+.formation-table tr:hover td{
+  background: rgba(108,166,255,0.10);
+}
+
+
