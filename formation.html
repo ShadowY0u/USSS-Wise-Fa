@@ -1,113 +1,129 @@
-<main class="container">
-  <div class="card page">
-    <h1 class="page__title">Hiérarchie</h1>
-    <p class="page__desc">Structure officielle – grades et pôles USS.</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U.S.S.S | Formation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- Direction -->
-    <section class="rank-section">
-      <div class="rank-section__head">
-        <h2>Direction</h2>
-        <span class="rank-badge">Command</span>
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo">
+        <img src="favicon.png" alt="Logo USSS">
       </div>
-
-      <ul class="rank-list">
-        <li class="rank-item">
-          <span class="rank-name">Directeur</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-name">Directeur-Adjoint</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Separator: SUPERVISOR -->
-    <div class="rank-divider">
-      <span>SUPERVISOR</span>
+      <div class="brand__name">U.S.S.S</div>
     </div>
 
-    <!-- Supervisor -->
-    <section class="rank-section">
-      <div class="rank-section__head">
-        <h2>Supervision</h2>
-        <span class="rank-badge">Supervisor</span>
-      </div>
-
-      <ul class="rank-list">
-        <li class="rank-item">
-          <span class="rank-name">Chief Supervisor</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-name">Senior Supervisor</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-name">Deputy Supervisor</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Separator: USSS -->
-    <div class="rank-divider">
-      <span>USSS</span>
-    </div>
-
-    <!-- USSS Agents -->
-    <section class="rank-section">
-      <div class="rank-section__head">
-        <h2>Agents (USSS)</h2>
-        <span class="rank-badge">Special Agents</span>
-      </div>
-
-      <ul class="rank-list">
-        <li class="rank-item">
-          <span class="rank-pill">GS-15</span>
-          <span class="rank-name">Special Agent in Charge (SAIC)</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-pill">GS-15</span>
-          <span class="rank-name">Deputy Assistant Special Agent in Charge (D/ASAIC)</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-pill">GS-14</span>
-          <span class="rank-name">Supervisory Special Agent</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-pill">GS-12</span>
-          <span class="rank-name">Special Agent</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-pill">GS-09</span>
-          <span class="rank-name">Special Agent</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-pill">GS-07</span>
-          <span class="rank-name">Special Agent</span>
-        </li>
-        <li class="rank-item">
-          <span class="rank-name">Probationary Agent</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- (Option) Formation - si tu veux l'afficher sur cette page -->
-    <section class="rank-section">
-      <div class="rank-section__head">
-        <h2>Formation</h2>
-        <span class="rank-badge">Training</span>
-      </div>
-
-      <ul class="rank-list">
-        <li class="rank-item"><span class="rank-name">Formation • Beanbag</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • Lethal</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • Négociation</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • Protection</span></li>
-
-        <li class="rank-item"><span class="rank-name">Formation • P &amp; S</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • Conduite</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • X26</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • MDT</span></li>
-        <li class="rank-item"><span class="rank-name">Formation • Driving</span></li>
-      </ul>
-    </section>
-
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="ceremonie.html">Cérémonie</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link nav__link--active" href="formation.html">Formation</a>
+    </nav>
   </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h1 class="hero__title">Formations Officielles</h1>
+    <p class="hero__subtitle">Compétence • Discipline • Excellence opérationnelle</p>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="card">
+
+    <div class="table-wrap">
+      <table class="formation-table">
+        <thead>
+          <tr>
+            <th>Formation</th>
+            <th>Description</th>
+            <th>Objectif</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Beanbag</td>
+            <td>Formation à l'utilisation de munitions non létales.</td>
+            <td>Maîtriser un suspect sans usage d’arme létale.</td>
+          </tr>
+
+          <tr>
+            <td>Lethal</td>
+            <td>Formation au maniement des armes à feu.</td>
+            <td>Intervention armée en situation critique.</td>
+          </tr>
+
+          <tr>
+            <td>Négociation</td>
+            <td>Gestion des conflits et prise de parole en situation tendue.</td>
+            <td>Résolution pacifique des crises.</td>
+          </tr>
+
+          <tr>
+            <td>Protection</td>
+            <td>Techniques de protection rapprochée VIP.</td>
+            <td>Assurer la sécurité des personnalités.</td>
+          </tr>
+
+          <tr>
+            <td>P &amp; S</td>
+            <td>Procédures et Sécurité opérationnelle.</td>
+            <td>Respect strict des protocoles internes.</td>
+          </tr>
+
+          <tr>
+            <td>Conduite</td>
+            <td>Techniques de conduite sécurisée.</td>
+            <td>Maîtrise des déplacements tactiques.</td>
+          </tr>
+
+          <tr>
+            <td>X26</td>
+            <td>Utilisation du Taser X26.</td>
+            <td>Neutralisation contrôlée d’un individu.</td>
+          </tr>
+
+          <tr>
+            <td>MDT</td>
+            <td>Utilisation du système informatique embarqué.</td>
+            <td>Gestion rapide des données opérationnelles.</td>
+          </tr>
+
+          <tr>
+            <td>Driving</td>
+            <td>Conduite avancée haute vitesse.</td>
+            <td>Intervention rapide et sécurisée.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
 </main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
