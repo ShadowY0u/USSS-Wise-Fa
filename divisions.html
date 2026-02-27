@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Divisions</title>
+  <title>U.S.S.S - Dispatch</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body class="page-divisions">
 <header class="topbar">
   <div class="topbar__left">
     <div class="brand">
@@ -22,7 +22,10 @@
       <a class="nav__link" href="communications.html">Communications</a>
       <a class="nav__link" href="plainte.html">Plainte</a>
       <a class="nav__link" href="vehicules.html">Véhicules</a>
-      <a class="nav__link nav__link--active" href="divisions.html">Divisions</a>
+
+      <!-- ✅ Remplacé: Divisions -> Dispatch -->
+      <a class="nav__link nav__link--active" href="dispatch.html">Dispatch</a>
+
       <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
       <a class="nav__link" href="supervision.html">Supervision</a>
       <a class="nav__link" href="formation.html">Formation</a>
@@ -40,66 +43,201 @@
 
 <main class="container">
   <section class="hero">
-    <h1 class="hero__title">Divisions</h1>
-    <p class="hero__subtitle">Organisation — rôles — responsabilités</p>
+    <h1 class="hero__title">Dispatch</h1>
+    <p class="hero__subtitle">Récapitulatif hebdomadaire — suivi des effectifs et décisions.</p>
   </section>
 
   <hr class="divider" />
 
-  <section class="grid grid--divisions">
-    <article class="card card--full card--padded">
-      <div class="tag"><span class="tag-dot"></span> Vue d’ensemble</div>
-      <h2>Structure générale</h2>
-      <p class="muted">
-        Cette page présente les divisions et leurs missions. Tu peux modifier les noms,
-        ajouter des chefs de division, et lister les accès / formations nécessaires.
-      </p>
-      <div class="split">
-        <a class="btn btn--primary" href="hierarchie.html">Voir la hiérarchie →</a>
-        <a class="btn btn--primary" href="formation.html">Programme formation →</a>
+  <!-- Bandeau semaine -->
+  <section class="dispatch-week">
+    <div class="dispatch-week__left">
+      <div class="dispatch-week__label">Semaine</div>
+      <div class="dispatch-week__range">Du <b>24/02</b> au <b>02/03</b></div>
+      <div class="dispatch-week__meta">Mise à jour : <b>02/03</b> • Responsable : <b>Chief Supervisor</b></div>
+    </div>
+
+    <div class="dispatch-week__right">
+      <div class="dispatch-kpi">
+        <div class="dispatch-kpi__value">3</div>
+        <div class="dispatch-kpi__label">Promotions</div>
       </div>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Protection</div>
-      <h2>Protection rapprochée</h2>
-      <ul>
-        <li>Escortes VIP & sécurisation d’événements.</li>
-        <li>Gestion périmètre + accès + contrôles.</li>
-        <li>Coordination radio et dispositif terrain.</li>
-      </ul>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Investigations</div>
-      <h2>Enquêtes & Renseignement</h2>
-      <ul>
-        <li>Collecte d’informations & filatures.</li>
-        <li>Analyse des menaces & prévention.</li>
-        <li>Rapports et coordination inter-unités.</li>
-      </ul>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Support</div>
-      <h2>Support & Logistique</h2>
-      <ul>
-        <li>Gestion équipements, véhicules, armurerie.</li>
-        <li>Préparation des opérations (matériel).</li>
-        <li>Maintenance et inventaires.</li>
-      </ul>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Commandement</div>
-      <h2>Supervision & Command</h2>
-      <ul>
-        <li>Validation des opérations sensibles.</li>
-        <li>Contrôle qualité, audits et discipline.</li>
-        <li>Suivi des effectifs & évaluations.</li>
-      </ul>
-    </article>
+      <div class="dispatch-kpi">
+        <div class="dispatch-kpi__value">1</div>
+        <div class="dispatch-kpi__label">Rétrogradations</div>
+      </div>
+      <div class="dispatch-kpi">
+        <div class="dispatch-kpi__value">7</div>
+        <div class="dispatch-kpi__label">Points positifs</div>
+      </div>
+      <div class="dispatch-kpi">
+        <div class="dispatch-kpi__value">4</div>
+        <div class="dispatch-kpi__label">À améliorer</div>
+      </div>
+    </div>
   </section>
+
+  <!-- PROMOTIONS -->
+  <section class="dispatch-card">
+    <div class="dispatch-head">
+      <h2 class="dispatch-title">Promotions</h2>
+      <span class="dispatch-badge">Recap</span>
+    </div>
+
+    <div class="dispatch-table-wrap">
+      <table class="dispatch-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Agent</th>
+            <th>Ancien grade</th>
+            <th>Nouveau grade</th>
+            <th>Motif</th>
+            <th>Validé par</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>26/02</td>
+            <td>Nom Prénom</td>
+            <td>Officier II</td>
+            <td>Officier III</td>
+            <td>Activité + comportement exemplaire</td>
+            <td>Senior Supervisor</td>
+          </tr>
+          <tr>
+            <td>01/03</td>
+            <td>Nom Prénom</td>
+            <td>Probationary</td>
+            <td>GS-07</td>
+            <td>Validation formation + test final</td>
+            <td>Chief Supervisor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- RÉTROGRADATIONS -->
+  <section class="dispatch-card">
+    <div class="dispatch-head">
+      <h2 class="dispatch-title">Rétrogradations</h2>
+      <span class="dispatch-badge dispatch-badge--warn">Discipline</span>
+    </div>
+
+    <div class="dispatch-table-wrap">
+      <table class="dispatch-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Agent</th>
+            <th>Grade</th>
+            <th>Décision</th>
+            <th>Raison</th>
+            <th>Validé par</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>28/02</td>
+            <td>Nom Prénom</td>
+            <td>Officier III</td>
+            <td>Rétrogradation Officier II</td>
+            <td>Non-respect radio + procédure</td>
+            <td>Deputy Supervisor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- POINTS POSITIFS -->
+  <section class="dispatch-card">
+    <div class="dispatch-head">
+      <h2 class="dispatch-title">Points positifs</h2>
+      <span class="dispatch-badge dispatch-badge--ok">Performance</span>
+    </div>
+
+    <div class="dispatch-table-wrap">
+      <table class="dispatch-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Agent</th>
+            <th>Point positif</th>
+            <th>Contexte</th>
+            <th>Noté par</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>25/02</td>
+            <td>Nom Prénom</td>
+            <td>Bonne gestion périmètre</td>
+            <td>Évènement VIP</td>
+            <td>Senior Supervisor</td>
+          </tr>
+          <tr>
+            <td>27/02</td>
+            <td>Nom Prénom</td>
+            <td>Communication radio parfaite</td>
+            <td>Intervention 10-78</td>
+            <td>Chief Supervisor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- À AMÉLIORER -->
+  <section class="dispatch-card">
+    <div class="dispatch-head">
+      <h2 class="dispatch-title">À améliorer</h2>
+      <span class="dispatch-badge dispatch-badge--warn">Suivi</span>
+    </div>
+
+    <div class="dispatch-table-wrap">
+      <table class="dispatch-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Agent</th>
+            <th>Point à améliorer</th>
+            <th>Action demandée</th>
+            <th>Échéance</th>
+            <th>Suivi par</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>26/02</td>
+            <td>Nom Prénom</td>
+            <td>Procédure contrôle</td>
+            <td>Revoir protocole + mise en situation</td>
+            <td>03/03</td>
+            <td>Deputy Supervisor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- NOTES / REMARQUES -->
+  <section class="dispatch-card">
+    <div class="dispatch-head">
+      <h2 class="dispatch-title">Notes de la semaine</h2>
+      <span class="dispatch-badge">Info</span>
+    </div>
+
+    <div class="dispatch-notes">
+      <ul class="dispatch-notes__list">
+        <li>Rappel : annonces radio courtes (lieu + motif + besoin).</li>
+        <li>Priorité au respect des procédures contrôle et périmètre.</li>
+        <li>Formations recommandées : MDT / Protection / Négociation.</li>
+      </ul>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -109,5 +247,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
