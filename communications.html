@@ -1,120 +1,137 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Communication</title>
+  <title>U.S.S.S - Communications</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
 <header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="communication.html">
-      <div class="brand-badge">U</div>
-      <div>USS</div>
-    </a>
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo" aria-hidden="true">★</div>
+      <div class="brand__name">U.S.S.S</div>
+    </div>
 
     <nav class="nav">
-      <a href="procedure.html">Procédure</a>
-      <a href="divisions.html">Divisions</a>
-      <a href="supervision.html">Supervision</a>
-      <a href="formation.html">Formation</a>
-      <a class="active" href="communication.html">Communication</a>
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link nav__link--active" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="divisions.html">Divisions</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="supervision.html">Supervision</a>
+      <a class="nav__link" href="formation.html">Formation</a>
     </nav>
+  </div>
+
+  <div class="topbar__right">
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input class="search__input" type="search" placeholder="Rechercher..." />
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
+    </div>
   </div>
 </header>
 
 <main class="container">
-  <div class="card page">
-    <h1 class="page__title">Communication</h1>
-    <p class="page__desc">
-      Codes radio officiels — utilisation claire, concise, et sans spam radio.
+  <section class="hero">
+    <h1 class="hero__title">Communications</h1>
+    <p class="hero__subtitle">Codes radio — clarté, précision, discipline.</p>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CODE TEN -->
+  <section class="comms-card">
+    <div class="comms-head">
+      <h2 class="comms-title">Code Ten</h2>
+      <span class="comms-badge">Radio</span>
+    </div>
+
+    <!-- Codes généraux -->
+    <h3 class="comms-subtitle">Codes généraux</h3>
+    <div class="comms-table-wrap">
+      <table class="comms-table">
+        <thead>
+          <tr>
+            <th>Codes</th>
+            <th>Signification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>10-01</td><td>Répétez</td></tr>
+          <tr><td>10-04</td><td>Affirmatif</td></tr>
+          <tr><td>10-05</td><td>Négatif</td></tr>
+          <tr><td>10-07</td><td>Pause de service</td></tr>
+          <tr><td>10-08</td><td>Prise de service</td></tr>
+          <tr><td>10-10</td><td>Fin de service</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Déplacements -->
+    <h3 class="comms-subtitle">Déplacements et patrouilles</h3>
+    <div class="comms-table-wrap">
+      <table class="comms-table">
+        <thead>
+          <tr>
+            <th>Codes</th>
+            <th>Signification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>10-12</td><td>Patrouille (secteur à préciser)</td></tr>
+          <tr><td>10-17</td><td>En direction de…</td></tr>
+          <tr><td>10-18</td><td>Arrivé(e) sur les lieux</td></tr>
+          <tr><td>10-19</td><td>Retour au poste</td></tr>
+          <tr><td>10-20</td><td>Position GPS</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Interventions -->
+    <h3 class="comms-subtitle">Interventions et situations spécifiques</h3>
+    <div class="comms-table-wrap">
+      <table class="comms-table">
+        <thead>
+          <tr>
+            <th>Codes</th>
+            <th>Signification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>10-26</td><td>Suspect appréhendé</td></tr>
+          <tr><td>10-30</td><td>Contrôle routier <em>(faire un Code 2 en plus)</em></td></tr>
+          <tr><td>10-31</td><td>Course-poursuite</td></tr>
+          <tr><td>10-41</td><td>Braquage <em>(fleeca, pacifique, supérette — précisez en radio)</em></td></tr>
+          <tr><td>10-42</td><td>Cambriolage</td></tr>
+          <tr><td>10-50</td><td>Accident</td></tr>
+          <tr><td>10-51</td><td>Tir d’arme à feu <em>(tir entendu ou signalé)</em></td></tr>
+          <tr><td>10-60</td><td>Vente de drogue</td></tr>
+          <tr><td>10-78</td><td>Besoin de renfort</td></tr>
+          <tr><td>10-83</td><td>Information sur situation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="comms-note">
+      ✅ Toujours annoncer : <b>lieu</b> + <b>motif</b> + <b>besoin</b> (renfort / EMS / périmètre).
     </p>
-
-    <!-- Bloc : Code Ten -->
-    <section class="table-card">
-      <div class="table-card__head">
-        <h2>Code Ten</h2>
-        <span class="rank-badge">Radio 4</span>
-      </div>
-
-      <!-- Codes généraux -->
-      <h3 class="table-subtitle">Codes généraux</h3>
-      <div class="table-wrap">
-        <table class="table-dark">
-          <thead>
-            <tr>
-              <th>Codes généraux</th>
-              <th>Signification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>10-01</td><td>Répétez</td></tr>
-            <tr><td>10-04</td><td>Affirmatif</td></tr>
-            <tr><td>10-05</td><td>Négatif</td></tr>
-            <tr><td>10-07</td><td>Pause de service</td></tr>
-            <tr><td>10-08</td><td>Prise de service</td></tr>
-            <tr><td>10-10</td><td>Fin de service</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Déplacements -->
-      <h3 class="table-subtitle">Déplacements et patrouilles</h3>
-      <div class="table-wrap">
-        <table class="table-dark">
-          <thead>
-            <tr>
-              <th>Déplacements et patrouilles</th>
-              <th>Signification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>10-12</td><td>Patrouille (secteur à préciser)</td></tr>
-            <tr><td>10-17</td><td>En direction de…</td></tr>
-            <tr><td>10-18</td><td>Arrivé(e) sur les lieux</td></tr>
-            <tr><td>10-19</td><td>Retour au poste</td></tr>
-            <tr><td>10-20</td><td>Position GPS</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Situations -->
-      <h3 class="table-subtitle">Interventions et situations spécifiques</h3>
-      <div class="table-wrap">
-        <table class="table-dark">
-          <thead>
-            <tr>
-              <th>Interventions</th>
-              <th>Signification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>10-26</td><td>Suspect appréhendé</td></tr>
-            <tr><td>10-30</td><td>Contrôle routier <em>(faire un Code 2 en plus)</em></td></tr>
-            <tr><td>10-31</td><td>Course-poursuite</td></tr>
-            <tr><td>10-41</td><td>Braquage <em>(fleeca, pacifique, supérette - précisez en radio)</em></td></tr>
-            <tr><td>10-42</td><td>Cambriolage</td></tr>
-            <tr><td>10-50</td><td>Accident</td></tr>
-            <tr><td>10-51</td><td>Tir d’arme à feu <em>(tir entendu ou signalé)</em></td></tr>
-            <tr><td>10-60</td><td>Vente de drogue</td></tr>
-            <tr><td>10-78</td><td>Besoin de renfort</td></tr>
-            <tr><td>10-83</td><td>Information sur situation</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="table-note">
-        Conseil : annonce toujours <b>le lieu</b> + <b>le motif</b> + <b>besoin</b> (renfort / EMS / périmètre).
-      </p>
-    </section>
-
-  </div>
+  </section>
 </main>
 
 <footer class="footer">
-  <div class="container">USS • Communication • Version site</div>
+  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
