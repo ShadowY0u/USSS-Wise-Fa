@@ -371,18 +371,20 @@ html{
 
 
 
-/* ===== Tables premium (Communication) ===== */
+/* ============================= */
+/*     COMMUNICATIONS (COMMS)    */
+/* ============================= */
 
-.table-card{
+.comms-card{
   margin-top: 14px;
-  padding: 16px;
-  border-radius: 18px;
+  padding: 18px;
+  border-radius: 20px;
   border: 1px solid rgba(255,255,255,.08);
-  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  background: rgba(255,255,255,.03);
   box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
-.table-card__head{
+.comms-head{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -390,60 +392,72 @@ html{
   margin-bottom: 6px;
 }
 
-.table-card__head h2{
+.comms-title{
   margin:0;
   font-size: 20px;
   letter-spacing: .2px;
 }
 
-.table-subtitle{
-  margin: 14px 0 10px;
-  font-size: 14px;
-  letter-spacing: .2px;
-  color: rgba(232,238,252,.85);
+.comms-badge{
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(79,140,255,.35);
+  background: rgba(79,140,255,.10);
+  color: rgba(232,238,252,.90);
 }
 
-.table-wrap{
-  overflow:auto;
+.comms-subtitle{
+  margin: 16px 0 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .25px;
+  color: rgba(232,238,252,.90);
+}
+
+.comms-table-wrap{
+  overflow-x: auto;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,.08);
-  background: rgba(255,255,255,.02);
+  background: rgba(0,0,0,.18);
 }
 
-.table-dark{
-  width:100%;
+.comms-table{
+  width: 100%;
   border-collapse: collapse;
-  min-width: 520px; /* pour éviter l’écrasement sur mobile */
+  min-width: 560px;
 }
 
-.table-dark thead th{
+.comms-table thead th{
   text-align:left;
   padding: 12px 12px;
   font-size: 13px;
-  color: rgba(232,238,252,.9);
-  background: rgba(255,255,255,.04);
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  font-weight: 900;
+  color: rgba(232,238,252,.92);
+  background: rgba(255,255,255,.05);
+  border-bottom: 1px solid rgba(255,255,255,.10);
 }
 
-.table-dark tbody td{
+.comms-table tbody td{
   padding: 12px 12px;
-  color: rgba(232,238,252,.88);
+  color: rgba(232,238,252,.86);
   border-bottom: 1px solid rgba(255,255,255,.06);
   vertical-align: top;
 }
 
-.table-dark tbody tr:hover td{
+.comms-table tbody tr:hover td{
   background: rgba(79,140,255,.10);
 }
 
-.table-dark tbody td:first-child{
-  width: 140px;
+.comms-table tbody td:first-child{
+  width: 120px;
   font-weight: 900;
-  letter-spacing: .3px;
-  color: rgba(232,238,252,.95);
+  letter-spacing: .25px;
+  color: rgba(122,167,255,.95);
 }
 
-.table-note{
+.comms-note{
   margin: 12px 2px 0;
   color: rgba(168,179,207,.95);
   line-height: 1.6;
