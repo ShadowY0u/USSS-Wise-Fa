@@ -1,122 +1,113 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Formation</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body class="page-formation">
-
-<header class="topbar">
-  <div class="topbar__left">
-    <div class="brand">
-      <div class="brand__logo" aria-hidden="true">★</div>
-      <div class="brand__name">U.S.S.S</div>
-    </div>
-
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="reglement.html">Règlement</a>
-      <a class="nav__link" href="procedure.html">Procédure</a>
-      <a class="nav__link" href="communications.html">Communications</a>
-      <a class="nav__link" href="plainte.html">Plainte</a>
-      <a class="nav__link" href="vehicules.html">Véhicules</a>
-      <a class="nav__link" href="divisions.html">Divisions</a>
-      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
-      <a class="nav__link" href="supervision.html">Supervision</a>
-      <a class="nav__link nav__link--active" href="formation.html">Formation</a>
-    </nav>
-  </div>
-
-  <div class="topbar__right">
-    <div class="search">
-      <span class="search__icon" aria-hidden="true">⌕</span>
-      <input class="search__input" type="search" placeholder="Rechercher..." />
-      <span class="search__hint" aria-hidden="true">Ctrl K</span>
-    </div>
-  </div>
-</header>
-
 <main class="container">
-  <section class="hero">
-    <h1 class="hero__title">Formation</h1>
-    <p class="hero__subtitle">
-      Parcours recrue — modules — validations
-    </p>
-  </section>
+  <div class="card page">
+    <h1 class="page__title">Hiérarchie</h1>
+    <p class="page__desc">Structure officielle – grades et pôles USS.</p>
 
-  <hr class="divider" />
-
-  <section class="grid grid--formation">
-
-    <article class="card card--full card--padded">
-      <div class="tag"><span class="tag-dot"></span> Parcours</div>
-      <h2>Programme de formation (exemple)</h2>
-      <ul>
-        <li><b>Phase 1</b> : Présentation + règlement + radio.</li>
-        <li><b>Phase 2</b> : Procédures terrain (contrôle, périmètre, escortes).</li>
-        <li><b>Phase 3</b> : Mise en situation + rapport + débrief.</li>
-        <li><b>Validation</b> : test final + supervision.</li>
-      </ul>
-
-      <div class="split">
-        <a class="btn btn--primary" href="procedure.html">Voir procédures →</a>
-        <a class="btn btn--primary" href="supervision.html">Règles supervision →</a>
+    <!-- Direction -->
+    <section class="rank-section">
+      <div class="rank-section__head">
+        <h2>Direction</h2>
+        <span class="rank-badge">Command</span>
       </div>
-    </article>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Recrue</div>
-      <h2>Prérequis</h2>
-      <ul>
-        <li>Connaître le règlement.</li>
-        <li>Avoir une tenue conforme.</li>
-        <li>Être présent et discipliné.</li>
+      <ul class="rank-list">
+        <li class="rank-item">
+          <span class="rank-name">Directeur</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Directeur-Adjoint</span>
+        </li>
       </ul>
-    </article>
+    </section>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Module</div>
-      <h2>Radio & communication</h2>
-      <ul>
-        <li>Canaux + codes internes.</li>
-        <li>Messages courts et clairs.</li>
-        <li>Priorités et annonces.</li>
+    <!-- Separator: SUPERVISOR -->
+    <div class="rank-divider">
+      <span>SUPERVISOR</span>
+    </div>
+
+    <!-- Supervisor -->
+    <section class="rank-section">
+      <div class="rank-section__head">
+        <h2>Supervision</h2>
+        <span class="rank-badge">Supervisor</span>
+      </div>
+
+      <ul class="rank-list">
+        <li class="rank-item">
+          <span class="rank-name">Chief Supervisor</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Senior Supervisor</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Deputy Supervisor</span>
+        </li>
       </ul>
-    </article>
+    </section>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Module</div>
-      <h2>Intervention</h2>
-      <ul>
-        <li>Contrôle d’identité.</li>
-        <li>Gestion des périmètres.</li>
-        <li>Escortes VIP.</li>
+    <!-- Separator: USSS -->
+    <div class="rank-divider">
+      <span>USSS</span>
+    </div>
+
+    <!-- USSS Agents -->
+    <section class="rank-section">
+      <div class="rank-section__head">
+        <h2>Agents (USSS)</h2>
+        <span class="rank-badge">Special Agents</span>
+      </div>
+
+      <ul class="rank-list">
+        <li class="rank-item">
+          <span class="rank-pill">GS-15</span>
+          <span class="rank-name">Special Agent in Charge (SAIC)</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-15</span>
+          <span class="rank-name">Deputy Assistant Special Agent in Charge (D/ASAIC)</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-14</span>
+          <span class="rank-name">Supervisory Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-12</span>
+          <span class="rank-name">Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-09</span>
+          <span class="rank-name">Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-07</span>
+          <span class="rank-name">Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Probationary Agent</span>
+        </li>
       </ul>
-    </article>
+    </section>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Validation</div>
-      <h2>Test final</h2>
-      <ul>
-        <li>Questionnaire règlement / procédures.</li>
-        <li>Scénario terrain + compte-rendu.</li>
-        <li>Décision : validé / rattrapage.</li>
+    <!-- (Option) Formation - si tu veux l'afficher sur cette page -->
+    <section class="rank-section">
+      <div class="rank-section__head">
+        <h2>Formation</h2>
+        <span class="rank-badge">Training</span>
+      </div>
+
+      <ul class="rank-list">
+        <li class="rank-item"><span class="rank-name">Formation • Beanbag</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Lethal</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Négociation</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Protection</span></li>
+
+        <li class="rank-item"><span class="rank-name">Formation • P &amp; S</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Conduite</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • X26</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • MDT</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Driving</span></li>
       </ul>
-    </article>
+    </section>
 
-  </section>
+  </div>
 </main>
-
-<footer class="footer">
-  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
