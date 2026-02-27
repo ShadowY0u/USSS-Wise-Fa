@@ -371,9 +371,9 @@ html{
 
 
 
-/* ============================= */
-/*     COMMUNICATIONS (COMMS)    */
-/* ============================= */
+/* =======================================
+   COMMUNICATIONS — TABLEAU 
+   ======================================= */
 
 .comms-card{
   margin-top: 14px;
@@ -381,7 +381,7 @@ html{
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,.08);
   background: rgba(255,255,255,.03);
-  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  box-shadow: 0 12px 34px rgba(0,0,0,.38);
 }
 
 .comms-head{
@@ -389,7 +389,7 @@ html{
   align-items:center;
   justify-content:space-between;
   gap:12px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .comms-title{
@@ -400,7 +400,7 @@ html{
 
 .comms-badge{
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 900;
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid rgba(79,140,255,.35);
@@ -410,55 +410,107 @@ html{
 
 .comms-subtitle{
   margin: 16px 0 10px;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: .25px;
-  color: rgba(232,238,252,.90);
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: .35px;
+  text-transform: uppercase;
+  color: rgba(232,238,252,.85);
 }
 
+/* Wrap = scroll mobile + cadre propre */
 .comms-table-wrap{
   overflow-x: auto;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,.08);
-  background: rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.22);
 }
 
+/* Table */
 .comms-table{
   width: 100%;
-  border-collapse: collapse;
-  min-width: 560px;
+  border-collapse: separate;      /* important pour garder le radius clean */
+  border-spacing: 0;
+  min-width: 620px;               /* évite que tout s’écrase */
 }
 
+/* Header */
 .comms-table thead th{
   text-align:left;
-  padding: 12px 12px;
+  padding: 13px 14px;
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 950;
   color: rgba(232,238,252,.92);
-  background: rgba(255,255,255,.05);
+  background: rgba(255,255,255,.06);
   border-bottom: 1px solid rgba(255,255,255,.10);
+  position: sticky;               /* optionnel mais stylé quand tu scroll */
+  top: 0;
+  backdrop-filter: blur(8px);
 }
 
+/* Radius header */
+.comms-table thead th:first-child{
+  border-top-left-radius: 16px;
+}
+.comms-table thead th:last-child{
+  border-top-right-radius: 16px;
+}
+
+/* Body cells */
 .comms-table tbody td{
-  padding: 12px 12px;
+  padding: 12px 14px;
+  font-size: 14px;
   color: rgba(232,238,252,.86);
   border-bottom: 1px solid rgba(255,255,255,.06);
   vertical-align: top;
 }
 
-.comms-table tbody tr:hover td{
-  background: rgba(79,140,255,.10);
-}
-
+/* Colonne code */
 .comms-table tbody td:first-child{
   width: 120px;
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: .25px;
   color: rgba(122,167,255,.95);
+  white-space: nowrap;
 }
 
+/* Zebra rows */
+.comms-table tbody tr:nth-child(odd) td{
+  background: rgba(255,255,255,.02);
+}
+.comms-table tbody tr:nth-child(even) td{
+  background: rgba(255,255,255,.035);
+}
+
+/* Hover clean */
+.comms-table tbody tr:hover td{
+  background: rgba(79,140,255,.12);
+}
+
+/* Dernière ligne radius */
+.comms-table tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 16px;
+}
+.comms-table tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 16px;
+}
+
+/* Petits textes en italique dans table */
+.comms-table em{
+  color: rgba(168,179,207,.95);
+  font-style: italic;
+}
+
+/* Note */
 .comms-note{
   margin: 12px 2px 0;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,.08);
   color: rgba(168,179,207,.95);
   line-height: 1.6;
+}
+
+/* Mobile : on réduit un peu */
+@media (max-width: 560px){
+  .comms-card{padding: 14px}
+  .comms-title{font-size: 18px}
 }
