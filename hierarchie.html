@@ -1,119 +1,113 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>U.S.S.S - Hiérarchie</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<header class="topbar">
-  <div class="topbar__left">
-    <div class="brand">
-      <div class="brand__logo" aria-hidden="true">★</div>
-      <div class="brand__name">U.S.S.S</div>
-    </div>
-
-    <nav class="nav">
-      <a class="nav__link" href="index.html">Accueil</a>
-      <a class="nav__link" href="reglement.html">Règlement</a>
-      <a class="nav__link" href="procedure.html">Procédure</a>
-      <a class="nav__link" href="communications.html">Communications</a>
-      <a class="nav__link" href="plainte.html">Plainte</a>
-      <a class="nav__link" href="vehicules.html">Véhicules</a>
-      <a class="nav__link" href="divisions.html">Divisions</a>
-      <a class="nav__link nav__link--active" href="hierarchie.html">Hiérarchie</a>
-      <a class="nav__link" href="supervision.html">Supervision</a>
-      <a class="nav__link" href="formation.html">Formation</a>
-    </nav>
-  </div>
-
-  <div class="topbar__right">
-    <div class="search">
-      <span class="search__icon" aria-hidden="true">⌕</span>
-      <input class="search__input" type="search" placeholder="Rechercher..." />
-      <span class="search__hint" aria-hidden="true">Ctrl K</span>
-    </div>
-  </div>
-</header>
-
 <main class="container">
   <div class="card page">
     <h1 class="page__title">Hiérarchie</h1>
-    <p class="page__desc">🏛️ Hiérarchie du United States Secret Service (USSS)</p>
+    <p class="page__desc">Structure officielle – grades et pôles USS.</p>
 
+    <!-- Direction -->
     <section class="rank-section">
       <div class="rank-section__head">
-        <h2>🇺🇸 Direction</h2>
+        <h2>Direction</h2>
         <span class="rank-badge">Command</span>
       </div>
+
       <ul class="rank-list">
-        <li class="rank-item">Director (Directeur)</li>
-        <li class="rank-item">Deputy Director (Directeur adjoint)</li>
+        <li class="rank-item">
+          <span class="rank-name">Directeur</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Directeur-Adjoint</span>
+        </li>
       </ul>
     </section>
 
+    <!-- Separator: SUPERVISOR -->
+    <div class="rank-divider">
+      <span>SUPERVISOR</span>
+    </div>
+
+    <!-- Supervisor -->
     <section class="rank-section">
       <div class="rank-section__head">
-        <h2>🏢 Commandement Exécutif</h2>
-        <span class="rank-badge">Executive</span>
+        <h2>Supervision</h2>
+        <span class="rank-badge">Supervisor</span>
       </div>
+
       <ul class="rank-list">
-        <li class="rank-item">Chief of Staff</li>
-        <li class="rank-item">Assistant Director</li>
-        <li class="rank-item">Deputy Assistant Director</li>
+        <li class="rank-item">
+          <span class="rank-name">Chief Supervisor</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Senior Supervisor</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Deputy Supervisor</span>
+        </li>
       </ul>
     </section>
 
+    <!-- Separator: USSS -->
+    <div class="rank-divider">
+      <span>USSS</span>
+    </div>
+
+    <!-- USSS Agents -->
     <section class="rank-section">
       <div class="rank-section__head">
-        <h2>🛡️ Corps des Agents Spéciaux</h2>
-        <span class="rank-badge">Agents</span>
+        <h2>Agents (USSS)</h2>
+        <span class="rank-badge">Special Agents</span>
       </div>
+
       <ul class="rank-list">
-        <li class="rank-item">Special Agent</li>
-        <li class="rank-item">Senior Special Agent</li>
-        <li class="rank-item">Supervisory Special Agent</li>
-        <li class="rank-item">Assistant Special Agent in Charge (ASAIC)</li>
-        <li class="rank-item">Special Agent in Charge (SAIC)</li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-15</span>
+          <span class="rank-name">Special Agent in Charge (SAIC)</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-15</span>
+          <span class="rank-name">Deputy Assistant Special Agent in Charge (D/ASAIC)</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-14</span>
+          <span class="rank-name">Supervisory Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-12</span>
+          <span class="rank-name">Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-09</span>
+          <span class="rank-name">Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-pill">GS-07</span>
+          <span class="rank-name">Special Agent</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-name">Probationary Agent</span>
+        </li>
       </ul>
     </section>
 
+    <!-- (Option) Formation - si tu veux l'afficher sur cette page -->
     <section class="rank-section">
       <div class="rank-section__head">
-        <h2>🚔 Uniformed Division</h2>
-        <span class="rank-badge">Uniformed</span>
-      </div>
-      <ul class="rank-list">
-        <li class="rank-item">Officer</li>
-        <li class="rank-item">Sergeant</li>
-        <li class="rank-item">Lieutenant</li>
-        <li class="rank-item">Captain</li>
-        <li class="rank-item">Deputy Inspector</li>
-        <li class="rank-item">Inspector</li>
-      </ul>
-    </section>
-
-    <section class="rank-section">
-      <div class="rank-section__head">
-        <h2>🎓 Formation / Recrutement</h2>
+        <h2>Formation</h2>
         <span class="rank-badge">Training</span>
       </div>
+
       <ul class="rank-list">
-        <li class="rank-item">Special Agent Trainee</li>
-        <li class="rank-item">Uniformed Division Officer (Probationary)</li>
+        <li class="rank-item"><span class="rank-name">Formation • Beanbag</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Lethal</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Négociation</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Protection</span></li>
+
+        <li class="rank-item"><span class="rank-name">Formation • P &amp; S</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Conduite</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • X26</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • MDT</span></li>
+        <li class="rank-item"><span class="rank-name">Formation • Driving</span></li>
       </ul>
     </section>
 
   </div>
 </main>
-<footer class="footer">
-  <p>© <span id="year"></span> U.S.S.S — Portail interne</p>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
