@@ -29,22 +29,19 @@ body {
   min-width: 0;
 }
 
-.brand {
+.brand__logo{
   display: flex;
   align-items: center;
-  gap: 10px;
-  white-space: nowrap;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
 }
-.brand__logo {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  background: rgba(108, 166, 255, 0.15);
-  border: 1px solid rgba(108, 166, 255, 0.25);
-  color: #6ca6ff;
-  font-weight: 700;
+
+.brand__logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 }
 .brand__name { font-weight: 800; letter-spacing: 0.4px; }
 
