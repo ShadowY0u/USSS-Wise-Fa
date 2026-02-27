@@ -331,3 +331,83 @@ html{
 .rank-item:active{
   transform: translateY(0px);
 }
+
+
+
+/* ===== Tables premium (Communication) ===== */
+
+.table-card{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.table-card__head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 6px;
+}
+
+.table-card__head h2{
+  margin:0;
+  font-size: 20px;
+  letter-spacing: .2px;
+}
+
+.table-subtitle{
+  margin: 14px 0 10px;
+  font-size: 14px;
+  letter-spacing: .2px;
+  color: rgba(232,238,252,.85);
+}
+
+.table-wrap{
+  overflow:auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+}
+
+.table-dark{
+  width:100%;
+  border-collapse: collapse;
+  min-width: 520px; /* pour éviter l’écrasement sur mobile */
+}
+
+.table-dark thead th{
+  text-align:left;
+  padding: 12px 12px;
+  font-size: 13px;
+  color: rgba(232,238,252,.9);
+  background: rgba(255,255,255,.04);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.table-dark tbody td{
+  padding: 12px 12px;
+  color: rgba(232,238,252,.88);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  vertical-align: top;
+}
+
+.table-dark tbody tr:hover td{
+  background: rgba(79,140,255,.10);
+}
+
+.table-dark tbody td:first-child{
+  width: 140px;
+  font-weight: 900;
+  letter-spacing: .3px;
+  color: rgba(232,238,252,.95);
+}
+
+.table-note{
+  margin: 12px 2px 0;
+  color: rgba(168,179,207,.95);
+  line-height: 1.6;
+}
