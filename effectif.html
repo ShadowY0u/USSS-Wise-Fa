@@ -4,11 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>U.S.S.S | Effectif</title>
-  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="page-supervision">
+<body>
 
 <header class="topbar">
   <div class="topbar__left">
@@ -28,78 +26,191 @@
       <a class="nav__link" href="vehicules.html">Véhicules</a>
       <a class="nav__link" href="ceremonie.html">Cérémonie</a>
       <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
-      <a class="nav__link nav__link--active" href="supervision.html">Supervision</a>
+      <a class="nav__link nav__link--active" href="effectif.html">Effectif</a>
       <a class="nav__link" href="formation.html">Formation</a>
     </nav>
   </div>
 
   <div class="topbar__right">
     <div class="search">
-      <span class="search__icon">⌕</span>
+      <span class="search__icon" aria-hidden="true">⌕</span>
       <input class="search__input" type="search" placeholder="Rechercher..." />
-      <span class="search__hint">Ctrl K</span>
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
     </div>
   </div>
 </header>
 
 <main class="container">
   <section class="hero">
-    <h1 class="hero__title">Supervision</h1>
-    <p class="hero__subtitle"> Gestion et suivi des effectifs actifs.</p>
-    </p>
+    <h1 class="hero__title">Effectif</h1>
+    <p class="hero__subtitle">Répartition des membres par grade (matricule • nom • prénom).</p>
   </section>
 
   <hr class="divider" />
 
-  <section class="grid grid--supervision">
+  <!-- ===== Direction ===== -->
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">Directeur</h2>
+      <span class="effectif-grade__count">2 membres</span>
+    </div>
 
-    <article class="card card--full card--padded">
-      <div class="tag"><span class="tag-dot"></span> Rôle principal</div>
-      <h2>Responsabilités du Supervisor</h2>
-      <ul>
-        <li>Validation des opérations sensibles.</li>
-        <li>Supervision des interventions terrain.</li>
-        <li>Décisions disciplinaires si nécessaire.</li>
-        <li>Contrôle du respect des procédures.</li>
-      </ul>
-
-      <div class="split">
-        <a class="btn btn--primary" href="procedure.html">Voir procédures →</a>
-        <a class="btn btn--primary" href="hierarchie.html">Voir hiérarchie →</a>
-      </div>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Inspection</div>
-      <h2>Contrôles internes</h2>
-      <ul>
-        <li>Inspection équipement & véhicules.</li>
-        <li>Vérification des rapports.</li>
-        <li>Audit comportement & discipline.</li>
-      </ul>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Discipline</div>
-      <h2>Sanctions & Mesures</h2>
-      <ul>
-        <li>Avertissement verbal / écrit.</li>
-        <li>Suspension temporaire.</li>
-        <li>Exclusion selon gravité.</li>
-      </ul>
-    </article>
-
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Évaluation</div>
-      <h2>Suivi des agents</h2>
-      <ul>
-        <li>Évaluation mensuelle des performances.</li>
-        <li>Recommandations promotion.</li>
-        <li>Rapport au commandement.</li>
-      </ul>
-    </article>
-
+    <div class="effectif-table-wrap">
+      <table class="effectif-table">
+        <thead>
+          <tr>
+            <th>Matricule</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>#0001</td><td>DOE</td><td>John</td></tr>
+          <tr><td>#0002</td><td>SMITH</td><td>James</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">Directeur-Adjoint</h2>
+      <span class="effectif-grade__count">1 membre</span>
+    </div>
+
+    <div class="effectif-table-wrap">
+      <table class="effectif-table">
+        <thead>
+          <tr>
+            <th>Matricule</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>#0003</td><td>BROWN</td><td>Michael</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===== Supervision (si tu la gardes dans l’effectif) ===== -->
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">Chief Supervisor</h2>
+      <span class="effectif-grade__count">1 membre</span>
+    </div>
+
+    <div class="effectif-table-wrap">
+      <table class="effectif-table">
+        <thead>
+          <tr>
+            <th>Matricule</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>#0100</td><td>WILSON</td><td>Alex</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">Senior Supervisor</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">Deputy Supervisor</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ===== USSS Agents (ordre) ===== -->
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">GS-15 — SAIC</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">GS-15 — D/ASAIC</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">GS-14 — Supervisory Special Agent</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">GS-12 — Special Agent</h2>
+      <span class="effectif-grade__count">2 membres</span>
+    </div>
+
+    <div class="effectif-table-wrap">
+      <table class="effectif-table">
+        <thead>
+          <tr>
+            <th>Matricule</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>#1201</td><td>MARTIN</td><td>Lucas</td></tr>
+          <tr><td>#1202</td><td>DUPONT</td><td>Enzo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">GS-09 — Special Agent</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">GS-07 — Special Agent</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
+  <section class="effectif-grade">
+    <div class="effectif-grade__head">
+      <h2 class="effectif-grade__title">Probationary Agent</h2>
+      <span class="effectif-grade__count">0 membre</span>
+    </div>
+    <div class="effectif-empty">Aucun membre enregistré à ce grade.</div>
+  </section>
+
 </main>
 
 <footer class="footer">
