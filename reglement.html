@@ -54,7 +54,14 @@
   <section class="card reg-viewer">
     <div class="reg-image-wrap">
       <!-- IMPORTANT: tes images doivent être dans /images/ et s'appeler reglement1.png ... reglement9.png -->
-      <img id="regImage" src="reglement1.png" alt="Règlement page 1">
+      <img src="reglement2.png" alt="Règlement page 2">
+      <img src="reglement3.png" alt="Règlement page 3">
+      <img src="reglement4.png" alt="Règlement page 4">
+      <img src="reglement5.png" alt="Règlement page 5">
+      <img src="reglement6.png" alt="Règlement page 6">
+      <img src="reglement7.png" alt="Règlement page 7">
+      <img src="reglement8.png" alt="Règlement page 8">
+      <img src="reglement9.png" alt="Règlement page 9">
     </div>
 
     <div class="reg-toolbar">
@@ -96,9 +103,6 @@
 
     prevBtn.disabled = current === 1;
     nextBtn.disabled = current === total;
-
-    prevBtn.classList.toggle("is-disabled", prevBtn.disabled);
-    nextBtn.classList.toggle("is-disabled", nextBtn.disabled);
   }
 
   prevBtn.addEventListener("click", () => {
@@ -109,13 +113,8 @@
     if (current < total) { current++; update(); }
   });
 
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowLeft") prevBtn.click();
-    if (e.key === "ArrowRight") nextBtn.click();
-  });
-
   update();
 </script>
-
+  
 </body>
 </html>
