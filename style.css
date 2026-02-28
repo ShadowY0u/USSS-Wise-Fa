@@ -796,3 +796,81 @@ html{
   background: rgba(108,166,255,.10);
 }
 
+/* ===== EFFECTIF (par grade) ===== */
+.effectif-grade{
+  margin: 14px 0;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+}
+
+.effectif-grade__head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom: 12px;
+}
+
+.effectif-grade__title{
+  margin:0;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.effectif-grade__count{
+  font-size: 12px;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(108,166,255,0.25);
+  background: rgba(108,166,255,0.10);
+  color: rgba(232,238,247,0.90);
+}
+
+/* Tableau */
+.effectif-table-wrap{
+  overflow-x:auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.18);
+}
+
+.effectif-table{
+  width:100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+.effectif-table th{
+  text-align:left;
+  padding: 12px 12px;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  color: rgba(232,238,247,0.90);
+}
+
+.effectif-table td{
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: rgba(232,238,247,0.85);
+}
+
+.effectif-table tbody tr:hover td{
+  background: rgba(108,166,255,0.10);
+}
+
+/* Si pas de membre */
+.effectif-empty{
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px dashed rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.14);
+  color: rgba(168,179,207,0.95);
+}
